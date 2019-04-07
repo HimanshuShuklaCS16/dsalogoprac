@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+class abc{
+    public static  void main(String args[])
+    {
+        int arr[]={-1,-1,6,1,9,3,2,-1,4,-1};
+        Set<Integer> s=new HashSet<Integer>();
+        int i;
+        for(i=0;i<arr.length;i++)
+        {
+            s.add(arr[i]);
+        }
+        for(i=0;i<arr.length;i++)
+        {
+            if(s.contains(i))
+            arr[i]=i;
+            else 
+            arr[i]=-1;
+        }
+          System.out.println(Arrays.toString(arr)); 
+
+        
+    }
+}
+    
